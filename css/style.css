@@ -93,15 +93,18 @@ body, html
 	position: absolute;
 	z-index: 15;
 	left: 90px;
+	
 	-webkit-transform-origin: 0px 0px 0px;
 	-moz-transform-origin: 0px 0px 0px;
 	-ms-transform-origin: 0px 0px 0px;
 	-o-transform-origin: 0px 0px 0px;
+	
 	transform-origin: 0px 0px 0px;
 	-webkit-transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
 	-o-transform: rotate(50deg);
 	transform: rotate(50deg);
+	
 	top: 27px;
 }
 
@@ -112,19 +115,24 @@ body, html
 	border-left: 0px solid transparent;
 	border-right: 83px solid transparent;
 	border-bottom: 150px solid #000;
-	position: absolute;
+	
 	z-index: 15;
+	position: absolute;
 	left: 200px;
+	top: 127px;
+	
 	webkit-transform-origin: 0px 0px 0px;
 	-moz-transform-origin: 0px 0px 0px;
 	-ms-transform-origin: 0px 0px 0px;
 	-o-transform-origin: 0px 0px 0px;
 	transform-origin: 0px 0px 0px;
+	
 	-webkit-transform: rotate(500deg);
 	-ms-transform: rotate(500deg);
 	-o-transform: rotate(500deg);
 	transform: rotate(500deg);
-	top: 127px;
+	
+	
 }
 
 .mouth_one
