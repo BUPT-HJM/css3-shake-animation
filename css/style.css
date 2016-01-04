@@ -388,4 +388,17 @@ body, html
 }
 }
 
+@-webkit-keyframes head_shake
+{
+00% {
+    top: 120px;
+}
+80% {
+    top: 120px;
+}
+100% {
+    top: 115px;
+}
+}
+
 
