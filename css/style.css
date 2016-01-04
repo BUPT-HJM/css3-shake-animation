@@ -41,8 +41,6 @@ body, html
 {
   width: 196px;
   height: 260px;
-  border-radius: 200px 200px 350px 350px;
-  background: #FFE4BE;
   position: absolute;
   top: 50%;
   left: 50%;
