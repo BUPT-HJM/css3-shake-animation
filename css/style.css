@@ -5,6 +5,7 @@ body, html
   margin:0;
   display: table;
   text-align: center;
+  font-family: "Microsoft YaHei" ! important;
 }
 
 .wrapper
@@ -46,11 +47,11 @@ body, html
   left: 50%;
   margin-top: -210px;
   margin-left: -98px;
-  -webkit-animation:head_shake 1s 1s infinite alternate ease-in-out;
-  -moz-animation:head_shake 1s 1s infinite alternate ease-in-out;
-  -ms-animation:head_shake 1s 1s infinite alternate ease-in-out;
-  -o-animation:head_shake 1s 1s infinite alternate ease-in-out;
-  animation:head_shake 1s 1s infinite alternate ease-in-out;
+  -webkit-animation:head_shake 1s 0s infinite alternate ease-in-out;
+  -moz-animation:head_shake 1s 0s infinite alternate ease-in-out;
+  -ms-animation:head_shake 1s 0s infinite alternate ease-in-out;
+  -o-animation:head_shake 1s 0s infinite alternate ease-in-out;
+  animation:head_shake 1s 0s infinite alternate ease-in-out;
   -webkit-transform-origin: center bottom 0px;
   -moz-transform-origin: center bottom 0px;
   -ms-transform-origin: center bottom 0px;
