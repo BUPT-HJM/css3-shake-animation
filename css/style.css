@@ -48,9 +48,16 @@ body, html
   left: 50%;
   margin-top: -210px;
   margin-left: -98px;
-  animation: head_shake 1s 1s infinite alternate ease-in-out;
-  -webkit-animation: head_shake 1s 1s infinite alternate ease-in-out;
-  transform-origin: center bottom 0px;
+  -webkit-animation:head_shake 1s 1s infinite alternate ease-in-out;
+  -moz-animation:head_shake 1s 1s infinite alternate ease-in-out;
+  -ms-animation:head_shake 1s 1s infinite alternate ease-in-out;
+  -o-animation:head_shake 1s 1s infinite alternate ease-in-out;
+  animation:head_shake 1s 1s infinite alternate ease-in-out;
+  -webkit-transform-origin: center bottom 0px;
+  -moz-transform-origin: center bottom 0px;
+  -ms-transform-origin: center bottom 0px;
+  -o-transform-origin: center bottom 0px;
+  transform-origin:center bottom 0px;
 }
 
 .hair
@@ -87,7 +94,14 @@ body, html
 	position: absolute;
 	z-index: 15;
 	left: 90px;
+	-webkit-transform-origin: 0px 0px 0px;
+	-moz-transform-origin: 0px 0px 0px;
+	-ms-transform-origin: 0px 0px 0px;
+	-o-transform-origin: 0px 0px 0px;
 	transform-origin: 0px 0px 0px;
+	-webkit-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
 	transform: rotate(50deg);
 	top: 27px;
 }
@@ -102,7 +116,14 @@ body, html
 	position: absolute;
 	z-index: 15;
 	left: 200px;
+	webkit-transform-origin: 0px 0px 0px;
+	-moz-transform-origin: 0px 0px 0px;
+	-ms-transform-origin: 0px 0px 0px;
+	-o-transform-origin: 0px 0px 0px;
 	transform-origin: 0px 0px 0px;
+	-webkit-transform: rotate(500deg);
+	-ms-transform: rotate(500deg);
+	-o-transform: rotate(500deg);
 	transform: rotate(500deg);
 	top: 127px;
 }
@@ -113,7 +134,14 @@ body, html
 	height: 50px;
 	position: absolute;
 	border-radius: 0px 0px 50px 50px;
+	webkit-transform-origin: 0px 0px 0px;
+	-moz-transform-origin: 0px 0px 0px;
+	-ms-transform-origin: 0px 0px 0px;
+	-o-transform-origin: 0px 0px 0px;
 	transform-origin: 0px 0px 0px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 	left: 56px;
 	top: 195px;
@@ -201,8 +229,11 @@ body, html
 	z-index: 16;
 	left: 110px;
 	top: 120px;
-	 animation: eyebrow_raise 1s 1s infinite alternate ease-in-out;
-    -webkit-animation: eyebrow_raise 1s 1s infinite alternate ease-in-out;
+	-webkit-animation:eyebrow_raise 1s 1s infinite alternate ease-in-out;
+  	-moz-animation:eyebrow_raise 1s 1s infinite alternate ease-in-out;
+  	-ms-animation:eyebrow_raise 1s 1s infinite alternate ease-in-out;
+  	-o-animation:eyebrow_raise 1s 1s infinite alternate ease-in-out;
+  	animation:eyebrow_raise 1s 1s infinite alternate ease-in-out;
 }
 
 .note{
@@ -216,18 +247,25 @@ body, html
 .note#one{
   margin-left: -250px;
   top: 50%;
-  animation: note-anim 2s 3.5s infinite ease;
-  animation-fill-mode: forwards;
-  -webkit-animation: note-anim 2s 3.5s infinite ease;
+  -webkit-animation:note-anim 2s 2s infinite ease;
+  -moz-animation:note-anim 2s 2s infinite ease;
+  -ms-animation:note-anim 2s 2s infinite ease;
+  -o-animation:note-anim 2s 2s infinite ease;
+  animation: note-anim 2s 2s infinite ease;
   -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;2
 }
 .note#two{
   margin-left: 150px;
   top: 30%;
-  animation: note-anim 2s 4.3s infinite ease;
-  animation-fill-mode: forwards;
-  -webkit-animation: note-anim 2s 4.3s infinite ease;
+  -webkit-animation:note-anim 2s 3s infinite ease;
+  -moz-animation:note-anim 2s 3s infinite ease;
+  -ms-animation:note-anim 2s 3s infinite ease;
+  -o-animation:note-anim 2s 3s infinite ease;
   -webkit-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 @keyframes note-anim
 {
