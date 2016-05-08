@@ -8,7 +8,7 @@
 <body>
 	<div class="wrapper">
 	    <div class="background-circle">
-	      <div class="body"></div>	      
+	      <div class="body"></div>
 	    </div>
 	    <div class="head">
 	    	<div class="hair"></div>
@@ -17,11 +17,11 @@
 	    	<div class="face"></div>
 	    	<div class="eyebrow_left"></div>
 	    	<div class="eyebrow_right"></div>
-	    	<div class="eye_left">
-	    		<div class="eye_inner"></div>
+	    	<div class="eye_left" id="eye_left">
+	    		<div class="eye_inner" id="eye_inner_left"></div>
 	    	</div>
-	    	<div class="eye_right">
-	    		<div class="eye_inner"></div>
+	    	<div class="eye_right" id="eye_right">
+	    		<div class="eye_inner" id="eye_inner_right"></div>
 	    	</div>
 	    	<div class="mouth_one"></div>
 	    	<div class="mouth_two"></div>
@@ -31,6 +31,56 @@
  	<span class="note" id="one">生日</span>
     <span class="note" id="two">快乐</span>
     </div>
+	<script>
+	    var eye_left = document.getElementById("eye_left");
+	    var eye_right = document.getElementById("eye_right");
+		var eye_inner_left = document.getElementById("eye_inner_left");
+		var eye_inner_right = document.getElementById("eye_inner_right");
 
+		var eye_left_left = eye_left.getBoundingClientRect().left;
+		var eye_left_top = eye_left.getBoundingClientRect().top;
+
+		var eye_right_left = eye_left.getBoundingClientRect().right;
+		var eye_right_top = eye_left.getBoundingClientRect().top;
+
+		var eye = {
+			left: 5,
+			top: 10
+		}
+		document.onmousemove = function mousemove(e) {
+			var radius = 7;
+			var eTop = e.pageY;
+			var eLeft = e.pageX;
+
+			//eye_inner_left
+			var l_x0 = eye_left_left + eye.left;
+			var l_x = eLeft - l_x0;
+			var l_y0 = eye_left_top + eye.top;
+			var l_y = l_y0 - eTop;
+
+			var l_angle = Math.atan2(l_y,l_x);
+
+			var ll_x = eye.left + radius * Math.cos(l_angle);
+			var ll_y = eye.top - radius * Math.sin(l_angle);
+
+			eye_inner_left.style.left = ll_x+'px';
+			eye_inner_left.style.top = ll_y+'px';
+			//eye_inner_right
+
+			var l_x0 = eye_right_left + eye.left;
+			var l_x = eLeft - l_x0;
+			var l_y0 = eye_right_top + eye.top;
+			var l_y = l_y0 - eTop;
+
+			var l_angle = Math.atan2(l_y,l_x);
+
+			var ll_x = eye.left + radius * Math.cos(l_angle);
+			var ll_y = eye.top - radius * Math.sin(l_angle);
+
+			eye_inner_right.style.left = ll_x+'px';
+			eye_inner_right.style.top = ll_y+'px';
+		}
+
+	</script>
 </body>
 </html>

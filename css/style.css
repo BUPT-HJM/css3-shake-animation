@@ -8,6 +8,7 @@ body, html
   font-family: "Microsoft YaHei" ! important;
 }
 
+
 .wrapper
 {
   margin-top:100px;
@@ -93,18 +94,18 @@ body, html
 	position: absolute;
 	z-index: 15;
 	left: 90px;
-	
+
 	-webkit-transform-origin: 0px 0px 0px;
 	-moz-transform-origin: 0px 0px 0px;
 	-ms-transform-origin: 0px 0px 0px;
 	-o-transform-origin: 0px 0px 0px;
-	
+
 	transform-origin: 0px 0px 0px;
 	-webkit-transform: rotate(50deg);
 	-ms-transform: rotate(50deg);
 	-o-transform: rotate(50deg);
 	transform: rotate(50deg);
-	
+
 	top: 27px;
 }
 
@@ -115,24 +116,24 @@ body, html
 	border-left: 0px solid transparent;
 	border-right: 83px solid transparent;
 	border-bottom: 150px solid #000;
-	
+
 	z-index: 15;
 	position: absolute;
 	left: 200px;
 	top: 127px;
-	
+
 	-webkit-transform-origin: 0px 0px 0px;
 	-moz-transform-origin: 0px 0px 0px;
 	-ms-transform-origin: 0px 0px 0px;
 	-o-transform-origin: 0px 0px 0px;
 	transform-origin: 0px 0px 0px;
-	
+
 	-webkit-transform: rotate(500deg);
 	-ms-transform: rotate(500deg);
 	-o-transform: rotate(500deg);
 	transform: rotate(500deg);
-	
-	
+
+
 }
 
 .mouth_one
@@ -180,7 +181,7 @@ body, html
 	top: 125px;
 	left: 47px;
 	opacity: 0;
-   
+
  }
 .eye_left
 {
@@ -224,7 +225,7 @@ body, html
 	position: absolute;
 	z-index: 16;
 	left: 40px;
-	top: 120px;	
+	top: 120px;
 }
 
 .eyebrow_right
@@ -287,7 +288,7 @@ body, html
 }
 45% {
   opacity: 1;
-}  
+}
 60% {
   -webkit-transform:rotate(-12deg) translate(30px,-100px);
   transform:rotate(-12deg) translate(30px,-100px);
@@ -312,7 +313,7 @@ body, html
 }
 45% {
   opacity: 1;
-}  
+}
 60% {
   -webkit-transform:rotate(-12deg) translate(30px,-100px);
   transform:rotate(-12deg) translate(30px,-100px);
